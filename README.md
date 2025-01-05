@@ -1,14 +1,8 @@
 # shopify-fe
 
-This template should help get you started developing with Vue 3 in Vite.
+## Project Description
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+This project is a simple Shopify Frontend Challenge. It is a simple web application that allows users to search for products and view product details.
 
 ## Project Setup
 
