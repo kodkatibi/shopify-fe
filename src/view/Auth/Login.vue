@@ -5,8 +5,8 @@
 <template>
 
   <div class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-      <img class="mx-auto h-10 w-auto"
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm justify-items-center">
+      <img class="mx-auto h-10 w-auto justify-center"
            src="https://cdn.shopify.com/shopifycloud/shopify_dev/bundles/04b59d3031dab6b17a884b1f2af799c7220adbc7cdd2e0ce62ba4c45ce40d961.svg"
            alt="Your Company"/>
       <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">Sign in to your account</h2>
@@ -72,9 +72,8 @@ export default {
             password: this.password,
           }).then((response) => {
         localStorage.setItem("token", response.data.data.token);
-        navigator.push("/dashboard");
+        this.$router.push("/");
       }).catch((error) => {
-        console.log(error);
         this.errorMessage = error.response.data.message;
       });
     }
