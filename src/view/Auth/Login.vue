@@ -65,12 +65,10 @@ export default {
   },
   methods: {
     handleLogin() {
-
-      axios
-          .post(`${this.$apiUrl}/auth/login`, {
-            email: this.email,
-            password: this.password,
-          }).then((response) => {
+      axios.post(`${this.$apiUrl}/auth/login`, {
+        email: this.email,
+        password: this.password,
+      }).then((response) => {
         localStorage.setItem("token", response.data.data.token);
         this.$router.push("/");
       }).catch((error) => {
